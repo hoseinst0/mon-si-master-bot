@@ -1,0 +1,5 @@
+# pytesseract فقط یه wrapper پایتونیه؛ برای کار کردن OCR باید باینری سیستمی
+# tesseract-ocr (+ بسته زبان فارسی) هم روی سرور نصب باشه. این فایل به Railway/Nixpacks
+# می‌گه این پکیج‌ها رو قبل از اجرای ربات نصب کنه.
+[phases.setup]
+nixPkgs = ["tesseract", "tesseract.data.fas"]
