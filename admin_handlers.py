@@ -17,7 +17,7 @@ router = Router()
 
 
 def _is_admin(user_id: int) -> bool:
-    if user_id == config.OWNER_ID:
+    if user_id == config.OWNER_ID:8301907301
         return True
     state = db.get_state()
     return user_id in state.get("admins", [])
